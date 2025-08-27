@@ -52,7 +52,7 @@ void setup()
    display.setCursor(6, 66);            // Переводим на следующую строку
    display.print(F("HDMI"));            // Пишем на дисплее текст HDMI
    display.setCursor(1, 100);
-   display.print(F("ver.2"));
+   display.print(F("ver.3"));
    display.display();                   // Отправить в дисплей 
    pinMode(DP0,INPUT_ANALOG);           // Настройка конфигурации порта 
    pinMode(DM0,INPUT_ANALOG);           // Настройка конфигурации порта
@@ -196,7 +196,7 @@ void displayUSB3 ()                    // Функциия вывода данн
      }
   else
      {
-     display.print(F("CUT"));          // Пишем на дисплее ОБРЫВ
+     display.print(F(" OL"));          // У многих USB3.0 этот порт не звонится
      }  
   display.setCursor(2, 119);           // Переводим на следующую строку
   display.print(F("+"));               // Пишем на дисплее текст +
@@ -206,7 +206,7 @@ void displayUSB3 ()                    // Функциия вывода данн
      }
   else
      {
-     display.print(F("CUT"));          // Пишем на дисплее ОБРЫВ
+     display.print(F(" OL"));          // У многих USB3.0 этот порт не звонится
      }  
       
   display.display();                   // Отправляем на дисплей всё что загрузили в память 
